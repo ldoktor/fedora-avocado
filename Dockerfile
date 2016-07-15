@@ -1,6 +1,6 @@
-# This Dockerfile creates an Fedora image with installed qemu
+# This Dockerfile creates an Fedora image with avocado framework installed
 #
-# VERSION 0.1
+# VERSION 1.1
 
 FROM fedora
 # based on jpetazzo/dind
