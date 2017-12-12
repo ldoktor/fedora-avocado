@@ -6,5 +6,5 @@ FROM fedora
 # based on jpetazzo/dind
 MAINTAINER Lukas Doktor, ldoktor@redhat.com
 # Install and clean in one step to decrease image size
-RUN dnf install -y python2-avocado && dnf clean all
+RUN curl https://repos-avocadoproject.rhcloud.com/static/avocado-fedora.repo -o /etc/yum.repos.d/avocado.repo && dnf install -y python-avocado && dnf clean all && rm /etc/yum.repos.d/avocado.repo
 CMD avocado
